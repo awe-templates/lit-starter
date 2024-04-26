@@ -1,1 +1,1 @@
-# Vite + Lit + TS + SAAS + TW Starter Template
+# Vite + Lit + TS + SASS + TW Starter Template
