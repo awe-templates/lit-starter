@@ -7,7 +7,10 @@ import viteLogo from "/vite.svg";
 import style from "./awesome-element.scss?inline";
 
 @customElement("awesome-element")
-export class AwesomeElement extends TailwindBaseElement(style) {
+export class AwesomeElement extends TailwindBaseElement({
+    componentStyle: style,
+    tailwindBase: true,
+}) {
     /**
      * Copy for the read the docs hint.
      */
