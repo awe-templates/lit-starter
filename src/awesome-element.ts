@@ -34,6 +34,7 @@ export class AwesomeElement extends TailwindBaseElement({
                     <a href="https://vitejs.dev" target="_blank">
                         <img src=${viteLogo} class="logo" alt="Vite logo" />
                     </a>
+
                     <a href="https://lit.dev" target="_blank">
                         <img src=${litLogo} class="logo lit" alt="Lit logo" />
                     </a>
@@ -41,13 +42,15 @@ export class AwesomeElement extends TailwindBaseElement({
 
                 <slot></slot>
 
+                <h1>${this.count}</h1>
+
                 <div class="card">
                     <button
                         @click=${this._onClick}
                         part="button"
                         class="awe-button"
                     >
-                        count is ${this.count}
+                        click me
                     </button>
                 </div>
 
